@@ -11,6 +11,7 @@
 		7F5796BE2AB20C860023D20B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796BD2AB20C860023D20B /* ContentView.swift */; };
 		7F5796C02AB20C880023D20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5796BF2AB20C880023D20B /* Assets.xcassets */; };
 		7F5796C42AB20C880023D20B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5796C32AB20C880023D20B /* Preview Assets.xcassets */; };
+		7F5796CE2AB20D450023D20B /* PersistenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796CD2AB20D450023D20B /* PersistenceKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		7F5796BF2AB20C880023D20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F5796C12AB20C880023D20B /* PersistenceKeyDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersistenceKeyDemo.entitlements; sourceTree = "<group>"; };
 		7F5796C32AB20C880023D20B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F5796CD2AB20D450023D20B /* PersistenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +54,11 @@
 		7F5796BA2AB20C860023D20B /* PersistenceKeyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7F5796CF2AB20D6D0023D20B /* Protocols */,
 				7F5796CC2AB20CED0023D20B /* Extensions */,
 				7F5796CA2AB20C9A0023D20B /* UI */,
 				7F5796CB2AB20CA00023D20B /* Design */,
 				7F5796C12AB20C880023D20B /* PersistenceKeyDemo.entitlements */,
-				7F5796C22AB20C880023D20B /* Preview Content */,
 			);
 			path = PersistenceKeyDemo;
 			sourceTree = "<group>";
@@ -72,6 +74,7 @@
 		7F5796CA2AB20C9A0023D20B /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				7F5796C22AB20C880023D20B /* Preview Content */,
 				7F5796BB2AB20C860023D20B /* PersistenceKeyDemoApp.swift */,
 				7F5796BD2AB20C860023D20B /* ContentView.swift */,
 			);
@@ -91,6 +94,14 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7F5796CF2AB20D6D0023D20B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7F5796CD2AB20D450023D20B /* PersistenceKey.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5796CE2AB20D450023D20B /* PersistenceKey.swift in Sources */,
 				7F5796BE2AB20C860023D20B /* ContentView.swift in Sources */,
 				7F5796BC2AB20C860023D20B /* PersistenceKeyDemoApp.swift in Sources */,
 			);
@@ -293,7 +305,7 @@
 				CODE_SIGN_ENTITLEMENTS = PersistenceKeyDemo/PersistenceKeyDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PersistenceKeyDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "PersistenceKeyDemo/UI/Preview\\ Content";
 				DEVELOPMENT_TEAM = VNA55J4REY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -331,7 +343,7 @@
 				CODE_SIGN_ENTITLEMENTS = PersistenceKeyDemo/PersistenceKeyDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PersistenceKeyDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "PersistenceKeyDemo/UI/Preview\\ Content";
 				DEVELOPMENT_TEAM = VNA55J4REY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
