@@ -12,6 +12,7 @@
 		7F5796C02AB20C880023D20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5796BF2AB20C880023D20B /* Assets.xcassets */; };
 		7F5796C42AB20C880023D20B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5796C32AB20C880023D20B /* Preview Assets.xcassets */; };
 		7F5796CE2AB20D450023D20B /* PersistenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796CD2AB20D450023D20B /* PersistenceKey.swift */; };
+		7F5796D12AB20DD10023D20B /* UserDefaults+PersistenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796D02AB20DD10023D20B /* UserDefaults+PersistenceKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7F5796C12AB20C880023D20B /* PersistenceKeyDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersistenceKeyDemo.entitlements; sourceTree = "<group>"; };
 		7F5796C32AB20C880023D20B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F5796CD2AB20D450023D20B /* PersistenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceKey.swift; sourceTree = "<group>"; };
+		7F5796D02AB20DD10023D20B /* UserDefaults+PersistenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+PersistenceKey.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		7F5796CC2AB20CED0023D20B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7F5796D02AB20DD10023D20B /* UserDefaults+PersistenceKey.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5796D12AB20DD10023D20B /* UserDefaults+PersistenceKey.swift in Sources */,
 				7F5796CE2AB20D450023D20B /* PersistenceKey.swift in Sources */,
 				7F5796BE2AB20C860023D20B /* ContentView.swift in Sources */,
 				7F5796BC2AB20C860023D20B /* PersistenceKeyDemoApp.swift in Sources */,
