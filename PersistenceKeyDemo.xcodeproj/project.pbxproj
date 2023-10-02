@@ -13,6 +13,8 @@
 		7F5796C42AB20C880023D20B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5796C32AB20C880023D20B /* Preview Assets.xcassets */; };
 		7F5796CE2AB20D450023D20B /* PersistenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796CD2AB20D450023D20B /* PersistenceKey.swift */; };
 		7F5796D12AB20DD10023D20B /* UserDefaults+PersistenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796D02AB20DD10023D20B /* UserDefaults+PersistenceKey.swift */; };
+		7F5796D42AB214FC0023D20B /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796D32AB214FC0023D20B /* UserDefaultsKey.swift */; };
+		7F5796D62AB2156A0023D20B /* UserDefaults+UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796D52AB2156A0023D20B /* UserDefaults+UserDefaultsKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7F5796C32AB20C880023D20B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F5796CD2AB20D450023D20B /* PersistenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceKey.swift; sourceTree = "<group>"; };
 		7F5796D02AB20DD10023D20B /* UserDefaults+PersistenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+PersistenceKey.swift"; sourceTree = "<group>"; };
+		7F5796D32AB214FC0023D20B /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		7F5796D52AB2156A0023D20B /* UserDefaults+UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+UserDefaultsKey.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		7F5796BA2AB20C860023D20B /* PersistenceKeyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7F5796D22AB214F50023D20B /* Models */,
 				7F5796CF2AB20D6D0023D20B /* Protocols */,
 				7F5796CC2AB20CED0023D20B /* Extensions */,
 				7F5796CA2AB20C9A0023D20B /* UI */,
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				7F5796D02AB20DD10023D20B /* UserDefaults+PersistenceKey.swift */,
+				7F5796D52AB2156A0023D20B /* UserDefaults+UserDefaultsKey.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -105,6 +111,14 @@
 				7F5796CD2AB20D450023D20B /* PersistenceKey.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7F5796D22AB214F50023D20B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7F5796D32AB214FC0023D20B /* UserDefaultsKey.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +195,8 @@
 				7F5796CE2AB20D450023D20B /* PersistenceKey.swift in Sources */,
 				7F5796BE2AB20C860023D20B /* ContentView.swift in Sources */,
 				7F5796BC2AB20C860023D20B /* PersistenceKeyDemoApp.swift in Sources */,
+				7F5796D42AB214FC0023D20B /* UserDefaultsKey.swift in Sources */,
+				7F5796D62AB2156A0023D20B /* UserDefaults+UserDefaultsKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 
 import Foundation
 
+// These functions extend UserDefaults to support any object that conforms to the PersistenceKey protocol
+// These methods would be included as part of a framework
 extension UserDefaults {
     /// A convenience method that wraps ``UserDefaults.standard.removeObject(forKey:)`` method to allow direct injection of a ``PersistenceKey``
     /// - Parameter persistenceKey: The key to remove the value from
