@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RootView.swift
 //  PersistenceKeyDemo
 //
 //  Created by Ike Mattice on 9/13/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RootView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +20,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    RootView()
 }

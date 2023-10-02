@@ -7,5 +7,6 @@
 
 enum UserDefaultsKey: String, PersistenceKey {
     case isNewUser
+    case userName
     case preferredColor
 }
