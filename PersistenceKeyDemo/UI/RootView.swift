@@ -8,14 +8,42 @@
 import SwiftUI
 
 struct RootView: View {
+    @AppStorage(.userName) var userName: String?
+    @AppStorage(.preferredColor) var favoriteColor: Color?
+
+    var userNameLabel: String {
+        if let userName {
+            return ", \(userName)!"
+        }
+        return "!"
+    }
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Welcome back\(userNameLabel)")
+                .font(.title)
+                .bold()
+
+            Spacer()
+
+            Text("This is the main app!")
+
+            Spacer()
+
+            Button("Delete My Account",
+                   role: .cancel,
+                   action: deleteAccount)
+            .foregroundColor(.red)
         }
-        .padding()
+        .frame(maxWidth: .infinity)
+        .background((favoriteColor ?? .blue).opacity(0.6))
+    }
+
+    private func deleteAccount() {
+        UserDefaults.standard.removeObject(forKey: .userName)
+        UserDefaults.standard.removeObject(forKey: .preferredColor)
+        
+        UserDefaults.standard.set(true, forKey: .isNewUser)
     }
 }
 

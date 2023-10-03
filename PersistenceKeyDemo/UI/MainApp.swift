@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct MainApp: App {
+    @AppStorage(.isNewUser) var isNewUser: Bool?
+
     var body: some Scene {
         WindowGroup {
-            RootView()
+            if let isNewUser,
+                isNewUser == true {
+                WelcomeView()
+            } else {
+                RootView()
+            }
         }
     }
 

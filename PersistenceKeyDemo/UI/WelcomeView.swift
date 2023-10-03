@@ -9,31 +9,30 @@ import SwiftUI
 
 struct WelcomeView: View {
     @State var userName: String = ""
+    @State var favoriteColor: Color = .blue
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Welcome to this Persistence Key Demo App!")
-                .font(.title)
-                .bold()
+        NavigationStack {
+            Form {
+                TextField("User Name", text: $userName)
 
-            Spacer()
+                ColorPicker("Select Your Favorite Color",
+                            selection: $favoriteColor,
+                            supportsOpacity: false)
+                Button("Confirm", action: confirm)
+                    .frame(maxWidth: .infinity, alignment: .center)
 
-            Text("Please enter a user name")
-
-            TextField("User Name", text: $userName)
-                .textFieldStyle(.roundedBorder)
-
-            Spacer()
-
-            Button("Confirm", action: confirm)
-                .frame(maxWidth: .infinity, alignment: .center)
+            }
+            .navigationTitle("Welcome!")
         }
-        .padding()
     }
 
     private func confirm() {
-        UserDefaults.standard.set(userName, forKey: .userName)
-        UserDefaults.standard.set(false, forKey: .isNewUser)
+        withAnimation {
+            UserDefaults.standard.set(userName, forKey: .userName)
+            UserDefaults.standard.set(favoriteColor, forKey: .preferredColor)
+            UserDefaults.standard.set(false, forKey: .isNewUser)
+        }
     }
 }
 
