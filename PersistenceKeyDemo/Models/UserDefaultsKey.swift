@@ -6,7 +6,11 @@
 //
 
 enum UserDefaultsKey: String, PersistenceKey {
+    /// Indicates if the user has opened the app and made an account, stored as a ``Bool``
     case isNewUser
+    /// The name the user has decided to call themselves, stored as a ``String``
+    /// Note: UserDefaults is not a secure storage option.  In a real application, sensitive information such as the user's name should not be stored in user defaults
     case userName
+    /// The user's preferred color, stored as a ``Color``
     case preferredColor
 }
