@@ -145,3 +145,18 @@ extension UserDefaults {
         self.set(url, forKey: persistenceKey.rawValue)
     }
 }
+
+// MARK: - Raw Representable Support
+extension UserDefaults {
+    public func set<R>(_ value: R?, forKey persistenceKey: some PersistenceKey) where R : RawRepresentable, R.RawValue == String {
+        self.set(value?.rawValue, forKey: persistenceKey.rawValue)
+    }
+
+    public func object<R>(forKey persistenceKey: some PersistenceKey) -> R? where R : RawRepresentable, R.RawValue == String {
+        guard let rawValue: String = string(forKey: persistenceKey.rawValue) else {
+            return nil
+        }
+
+        return R(rawValue: rawValue)
+    }
+}
