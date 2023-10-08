@@ -9,14 +9,11 @@
 /* Begin PBXBuildFile section */
 		7F19A6462ACB50080052C8BA /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19A6452ACB50080052C8BA /* WelcomeView.swift */; };
 		7F19A6482ACB52840052C8BA /* AppStorage+UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19A6472ACB52840052C8BA /* AppStorage+UserDefaultsKey.swift */; };
-		7F19A64A2ACB52A50052C8BA /* AppStorage+PersistenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19A6492ACB52A50052C8BA /* AppStorage+PersistenceKey.swift */; };
 		7F19A64C2ACB6CAA0052C8BA /* Color+RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F19A64B2ACB6CAA0052C8BA /* Color+RawRepresentable.swift */; };
 		7F5796BC2AB20C860023D20B /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796BB2AB20C860023D20B /* MainApp.swift */; };
 		7F5796BE2AB20C860023D20B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796BD2AB20C860023D20B /* RootView.swift */; };
 		7F5796C02AB20C880023D20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5796BF2AB20C880023D20B /* Assets.xcassets */; };
 		7F5796C42AB20C880023D20B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5796C32AB20C880023D20B /* Preview Assets.xcassets */; };
-		7F5796CE2AB20D450023D20B /* PersistenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796CD2AB20D450023D20B /* PersistenceKey.swift */; };
-		7F5796D12AB20DD10023D20B /* UserDefaults+PersistenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796D02AB20DD10023D20B /* UserDefaults+PersistenceKey.swift */; };
 		7F5796D42AB214FC0023D20B /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796D32AB214FC0023D20B /* UserDefaultsKey.swift */; };
 		7F5796D62AB2156A0023D20B /* UserDefaults+UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5796D52AB2156A0023D20B /* UserDefaults+UserDefaultsKey.swift */; };
 /* End PBXBuildFile section */
@@ -24,7 +21,6 @@
 /* Begin PBXFileReference section */
 		7F19A6452ACB50080052C8BA /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		7F19A6472ACB52840052C8BA /* AppStorage+UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStorage+UserDefaultsKey.swift"; sourceTree = "<group>"; };
-		7F19A6492ACB52A50052C8BA /* AppStorage+PersistenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppStorage+PersistenceKey.swift"; sourceTree = "<group>"; };
 		7F19A64B2ACB6CAA0052C8BA /* Color+RawRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+RawRepresentable.swift"; sourceTree = "<group>"; };
 		7F5796B82AB20C860023D20B /* PersistenceKeyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistenceKeyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5796BB2AB20C860023D20B /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
@@ -32,8 +28,6 @@
 		7F5796BF2AB20C880023D20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F5796C12AB20C880023D20B /* PersistenceKeyDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersistenceKeyDemo.entitlements; sourceTree = "<group>"; };
 		7F5796C32AB20C880023D20B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7F5796CD2AB20D450023D20B /* PersistenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceKey.swift; sourceTree = "<group>"; };
-		7F5796D02AB20DD10023D20B /* UserDefaults+PersistenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+PersistenceKey.swift"; sourceTree = "<group>"; };
 		7F5796D32AB214FC0023D20B /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
 		7F5796D52AB2156A0023D20B /* UserDefaults+UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+UserDefaultsKey.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				7F5796D22AB214F50023D20B /* Models */,
-				7F5796CF2AB20D6D0023D20B /* Protocols */,
 				7F5796CC2AB20CED0023D20B /* Extensions */,
 				7F5796CA2AB20C9A0023D20B /* UI */,
 				7F5796CB2AB20CA00023D20B /* Design */,
@@ -108,21 +101,11 @@
 		7F5796CC2AB20CED0023D20B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				7F5796D02AB20DD10023D20B /* UserDefaults+PersistenceKey.swift */,
 				7F5796D52AB2156A0023D20B /* UserDefaults+UserDefaultsKey.swift */,
 				7F19A6472ACB52840052C8BA /* AppStorage+UserDefaultsKey.swift */,
-				7F19A6492ACB52A50052C8BA /* AppStorage+PersistenceKey.swift */,
 				7F19A64B2ACB6CAA0052C8BA /* Color+RawRepresentable.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		7F5796CF2AB20D6D0023D20B /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				7F5796CD2AB20D450023D20B /* PersistenceKey.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		7F5796D22AB214F50023D20B /* Models */ = {
@@ -204,10 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F19A6482ACB52840052C8BA /* AppStorage+UserDefaultsKey.swift in Sources */,
-				7F5796D12AB20DD10023D20B /* UserDefaults+PersistenceKey.swift in Sources */,
-				7F5796CE2AB20D450023D20B /* PersistenceKey.swift in Sources */,
 				7F5796BE2AB20C860023D20B /* RootView.swift in Sources */,
-				7F19A64A2ACB52A50052C8BA /* AppStorage+PersistenceKey.swift in Sources */,
 				7F19A64C2ACB6CAA0052C8BA /* Color+RawRepresentable.swift in Sources */,
 				7F5796BC2AB20C860023D20B /* MainApp.swift in Sources */,
 				7F5796D42AB214FC0023D20B /* UserDefaultsKey.swift in Sources */,

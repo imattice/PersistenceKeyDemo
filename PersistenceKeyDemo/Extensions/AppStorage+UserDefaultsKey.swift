@@ -8,8 +8,6 @@
 import SwiftUI
 
 /// Allows for the initialization of an ``@AppStorage`` wrapped property to be initialized with syntax using a ``UserDefaultsKey``
-/// These methods would be included as part of the application
-/// i.e. @AppStorage(.exampleKey) var storedValue: ExampleType
 extension AppStorage {
     /// Creates an ``AppStorage`` property stored under the provided ``UserDefaultsKey``
     /// - Parameters:
